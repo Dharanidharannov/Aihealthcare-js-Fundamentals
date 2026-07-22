@@ -1,0 +1,71 @@
+Js fundamentals
+
+
+*** Javascript Basics ***
+
+                    //Variables  - storage element , we can store the data . Types are \\
+
+Var - Global scope/ functional scope
+        >Rules for var 
+           1. Declaration
+           2. Initialization
+           3. Reuse
+           4. Reinitialization
+           5. ReDeclaration
+
+Let - Block scope
+        >Rules for let
+           1. Declaration
+           2. Initialization
+           3. Reuse
+           4. Reinitialization
+           5. In let ReDeclaration not able to use it will not accept 
+
+Const - constant value - Block scope
+        >Rules for Const
+            1. Declaration
+            2. Initialization
+        ** In const Reuse,ReDeclaration,Reinitialization will not able to use in const because it is a constant value 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+                                  // Datatypes \\
+
+      1. Primitive Datatype
+      2. Non Primitive Datatype
+
+1. Primitive Datatypes
+    > store single value in single variable
+    > Primitive values are cant able to change directly
+   TYPES:
+       a. string -  storing a value in the format of text in double quotes ("") , single quotes('')
+       b. number - storing a value in integer and decimal format 
+       c. Boolean - stores only true or false 
+       d. undefined - Variables declared but value not assigned 
+       e. null - it represent empty or no values
+
+2. Non-Primitive Datatypes
+    > Store multiple value in single variable
+    > Non-Primitive values are changeable after creation
+   TYPES:
+       a. Array - storing a multiple values in the format of text , number etc in square bracket
+       b. Object - storing a multiple values in key&value format in curly bracket
+
+------------------------------------------------------------------------------------------------------------------------------
+
+*** in console we use typeof to check the datatype of the value***
+
+*** == it check only value ***
+
+*** === it check both value and type***
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+         //  Type Conversion \\
+
+  > There are two types of conversion is there 
+        1. Implicit
+        2. Explicit
+
+1.Implicit
+
+  // String -   *** String is anything string ****
+             eg: console.log(typeof("5"+5))
