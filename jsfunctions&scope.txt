@@ -1,0 +1,113 @@
+// js function and scope
+
+
+** function **
+   > block of code for specific task 
+   > reuse code and value
+   > Avoid repeatation 
+   > organize the code 
+   > clean , readable code 
+   > save time 
+   > reduce code line , reliability 
+
+1. function declaration - creating function 
+        
+        function *functionname*(parameters){
+           statment
+        }
+
+       functionname(arguments)
+
+2. function expression - storing function in Variables
+
+const student = function(parameters){
+   statement
+}
+student(arguments)
+
+3.Arrow function
+
+ const arrow =(parameters)=>{
+        //statement
+ }
+  arrow(argument)
+
+4.Parameters&arguments
+ > parameter is used in function declaration
+ >argument is used in calling function
+             
+             function add(a,b){
+                console.log(a+b)
+             }
+             add(10,20)
+
+5.Default Parameter 
+ >default parameter is passing value in parameter itself
+
+  function climate(climate="rainy"){
+     console.log(`today climate is very ${climate}`)
+  }
+
+  climate()
+
+6.Rest Parameter
+> it will collect multiple argument into a single array
+  
+    function rest (...a){
+       return a
+    }
+    rest(10,20,30)
+
+7.callback function
+   >passing a  function as argument in another function
+
+ function add(a,b){
+    console.log(a+b)
+ }
+
+function calculator(callback,a,b){
+     callback(a,b)
+}
+calculator(add,2,3)
+
+8. Closures
+
+> A closure is a function that remembers and can access the variables of its outer function even after the outer function has finished executing.
+
+Example:
+
+function outer() {
+    let count = 0;
+
+    function inner() {
+        count++;
+        console.log(count);
+    }
+
+    return inner;
+}
+
+const counter = outer();
+
+counter(); // 1
+counter(); // 2
+counter(); // 3
+
+9. this Keyword
+
+> The `this` keyword refers to the object that is currently executing the function.
+> Its value depends on how the function is called.
+
+> in arrow function this doesnot have own 
+
+Example:
+
+const person = {
+    name: "Virat",
+
+    greet() {
+        console.log(this.name);
+    }
+};
+
+person.greet();

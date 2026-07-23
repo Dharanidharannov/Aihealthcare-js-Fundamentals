@@ -53,19 +53,87 @@ Const - constant value - Block scope
 
 *** in console we use typeof to check the datatype of the value***
 
-*** == it check only value ***
-
-*** === it check both value and type***
 
 -----------------------------------------------------------------------------------------------------------------------------
 
          //  Type Conversion \\
 
   > There are two types of conversion is there 
-        1. Implicit
-        2. Explicit
+        1. Implicit - convert datatype automatically
+        2. Explicit - convert datatype manually
+    
+    boolen values
+       > true=1
+       >false=0
 
 1.Implicit
 
-  // String -   *** String is anything string ****
-             eg: console.log(typeof("5"+5))
+  // String -   *** String is anything string  while in + ****
+             eg: console.log(typeof("5"+5)) // in this + is act as concatination thats why value 55 
+
+        ** in string -,* and / this behvae like normal mathametic operator so string numeric automatically convert 
+        into number but string alphament cant able convert so its become NaN
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+                          
+                          // Operators \\
+
+1.Arthimetic operator - mathametic operator
+              additional(+)
+              Subtraction(-)
+              Multiplication(*)
+              Division(/)
+              modulus (%) - division remainder value
+              Exponenical (**) - power of value
+              increment(++)
+                  > post increment (a++)
+                  >pre increment (++a)
+                  
+              decrement (--)
+                  >post decrement (a--)
+                  >pre decrement (--a)
+
+            ** you finding element first available in variable side means. you can calculate only till the variable in value side.**
+          ** you finding element first available in value side means. you can calculate entaire value in value side.**
+
+2.Assignment operator - assgining a values 
+              assignment (=)
+              add and assignment (+=)
+              subtract and assignment (-=)
+
+3. comparsion operator - comparing two values
+                   == dobule equalto it check only value
+                   === triple equalto it check both value and type
+                   > greaterthan
+                   < lesserthan
+                   >= greaterthan equalto
+                   <= lesserthan eqaulto
+                   != not equal to
+                   !== strict not equal to
+
+4. Logical Operator - check multiple condition 
+                   AND operator (&&) - in AND operator there not be false if any one statement is false condition also false
+                   OR operator (||) - in OR operator there is any one statement is true means condition also true
+                   NOT operator (!) - in this operator if true means false false means true 
+
+5. Ternary Operator - its behave like if else but syntax is simpler method 
+                  condition ? statement1 : statement 2
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                //Conditional statement //
+
+1. if  - if(condition){statement}
+2. if else - if(condition){statement}else{statement}
+3. else if - if(condition){statement}else if(condition){statement}else{statement}
+4. nested if - if(condition){if(condition){statment}else{statement}}else{statement}
+5.switch - switch(condition){case "value":statment break case "value":statement break default: satement break }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                              // Loops //
+**in looping small to big means iteration should be increment; big to small iteration should be decrement
+1.for loop - for(Initialization;condition;iteration){statement}
+2. while loop - Initialization while(condition){statement iteration}
+3. do while loop - Initialization do{statement iteration} while(condition)
+4. for of loop (it should be used for string and array) - for(declaration type variable){statement}
+5.for in loop (it should be used for only object ) - for(declaration type variable){statement}

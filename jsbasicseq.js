@@ -86,4 +86,148 @@ console.log(object); // store multiple values in single variables in key and val
 
          /* -------------------------------------------------------------------------------------------------- */
 
-// 
+/* Type Conversion */
+
+// Implicit \\
+
+//  string 
+
+console.log(typeof("5"+5)) // 55 because in string + operator act as concatination  string+number-> string
+
+
+
+console.log(typeof("10"+"sachin")) // 10sachin  string+string-> string
+
+console.log(typeof("string"+true)); //stringtrue  string+boolean -> string
+
+let str
+console.log(typeof("5"+str)); //5undefined string+undefined -> string
+
+let str1 = null
+console.log(typeof("10"+str1)); //10null string+null -> string
+
+ let arr1 = [24,25,26,27]
+console.log(typeof("hello"+arr1)); //helloarr1 string+array -> string
+
+let obj2 = {
+    name:"surya",
+    age:26
+}
+console.log(typeof("hiii"+obj2)); 
+//hiiiobj2 string+object -> string
+
+// based on arthimetic operator 
+console.log(typeof("10"-2)); 
+// 8 in this (- => minus operator) have only one method it will not do concatenation so string automatically convert into number so number -number -> number  
+
+console.log(typeof("10"*2)); 
+//20 in this (* => multiplication operator) have only one method it will not do concatenation so string automatically convert into number so number*number -> number
+
+console.log(typeof("hii"-2));
+// NaN in this scenerio hiii is try to convert into number but its not number string that a NaN so NaN is number
+
+// number
+
+console.log(typeof(10+"5")); //105 because in this + doing concantation  so number+string -> string 
+
+console.log(typeof(10+10)); //20 number+number-> number
+
+console.log(typeof(10+true)); //11 in typeconversion boolean value for true is 1 false is 0 
+
+
+// Boolean
+console.log(typeof(true+false)) // 1 in typeconversion true value is 1 false value is 0 so its type is number
+
+console.log(typeof(false+undefined));
+
+
+// Explicit \\
+console.log(typeof(String(10))); // manual conversion  String constructor  convert value into string
+
+console.log(typeof(Number("10"))); // number constructor convert value into number
+
+console.log(Boolean(1)); //Boolean Constructor comvert into boolean true or false
+console.log(Boolean(undefined));
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* Operators */
+
+// Arthimetic operators
+
+// addition
+console.log(5+5)
+
+// subtraction
+console.log(10-5);
+
+// multiplication
+console.log(10*5);
+
+// divison
+console.log(10/5);
+
+// modulus
+console.log(10%5);
+
+// Exponencial 
+console.log(2**2
+);
+
+// increment
+    
+    //  post increment basic
+        let post = 10
+           post++
+           console.log(post)
+
+        let post1 = 10
+            post1 = post1++ 
+          console.log(post1);
+
+        let inc = 10
+        let inc1 = inc++
+        console.log(inc); //11 
+        console.log(inc1); //10  
+
+// same for also decrement 
+
+let i=0
+while(i<10){
+    console.log(i);
+     i++
+}
+
+let j = 20
+
+do{
+ console.log(j);
+ j--
+ 
+}while(j>10)
+
+let string = "surya"
+
+for(let s of string){
+    console.log(s);
+    
+}
+
+let object3 = {
+    name:"virat",
+    country:"india"
+}
+
+for(let obj in object3){
+    console.log(obj,object3[obj]);    
+}
+
+
+const person ={
+    name:"dharani",
+     greet(){
+      console.log("hii "+this.name); 
+      
+    }
+}
+person.greet()

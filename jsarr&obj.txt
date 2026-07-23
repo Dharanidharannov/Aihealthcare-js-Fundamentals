@@ -1,0 +1,400 @@
+// Arrays & Objects
+
+** Arrays **
+
+> Array is a collection of multiple values stored in a single variable.
+> Array index starts from 0.
+
+1. Creating Array
+
+const fruits = ["Apple","Mango","Orange"];
+
+const numbers = [10,20,30];
+
+---------------------------------------------------
+
+2. Accessing Elements
+
+> Access array values using index.
+
+const fruits = ["Apple","Mango","Orange"];
+
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+
+---------------------------------------------------
+
+3. Updating Elements
+
+> Update array value using index.
+
+const fruits = ["Apple","Mango","Orange"];
+
+fruits[1] = "Banana";
+
+console.log(fruits);
+
+---------------------------------------------------
+
+4. Looping Through Arrays
+
+> Used to access all array elements one by one.
+
+for Loop
+
+const numbers = [10,20,30];
+
+for(let i=0;i<numbers.length;i++){
+    console.log(numbers[i]);
+}
+
+---------------------------------
+
+for...of Loop
+
+const numbers = [10,20,30];
+
+for(let value of numbers){
+    console.log(value);
+}
+
+---------------------------------
+
+====================================================
+
+** Array Methods **
+
+1. push()
+
+> Adds one or more elements at the end of the array.
+
+const fruits = ["Apple","Mango"];
+
+fruits.push("Orange");
+
+console.log(fruits);
+
+---------------------------------------------------
+
+2. pop()
+
+> Removes the last element from the array.
+
+const fruits = ["Apple","Mango","Orange"];
+
+fruits.pop();
+
+console.log(fruits);
+
+---------------------------------------------------
+
+3. shift()
+
+> Removes the first element from the array.
+
+const fruits = ["Apple","Mango","Orange"];
+
+fruits.shift();
+
+console.log(fruits);
+
+---------------------------------------------------
+
+4. unshift()
+
+> Adds one or more elements at the beginning of the array.
+
+const fruits = ["Apple","Mango"];
+
+fruits.unshift("Orange");
+
+console.log(fruits);
+
+---------------------------------------------------
+
+5. slice()
+
+> Returns a new array without changing the original array.
+
+const numbers = [10,20,30,40,50];
+
+console.log(numbers.slice(1,4));
+
+---------------------------------------------------
+
+6. splice()
+
+> Adds, removes or replaces elements in the original array.
+
+const numbers = [10,20,30,40];
+
+numbers.splice(1,2);
+
+console.log(numbers);
+
+---------------------------------------------------
+
+7. concat()
+
+> Combines two or more arrays.
+
+const a = [10,20];
+
+const b = [30,40];
+
+console.log(a.concat(b));
+
+---------------------------------------------------
+
+8. join()
+
+> Converts an array into a string.
+
+const fruits = ["Apple","Mango","Orange"];
+
+console.log(fruits.join("-"));
+
+---------------------------------------------------
+
+9. indexOf()
+
+> Returns the index of an element.
+
+const fruits = ["Apple","Mango","Orange"];
+
+console.log(fruits.indexOf("Mango"));
+
+---------------------------------------------------
+
+10. includes()
+
+> Checks whether an element exists in the array.
+
+const fruits = ["Apple","Mango","Orange"];
+
+console.log(fruits.includes("Apple"));
+
+---------------------------------------------------
+
+11. find()
+
+> Returns the first element that satisfies the condition.
+
+const numbers = [10,20,30,40];
+
+const result = numbers.find(num=>num>20);
+
+console.log(result);
+
+---------------------------------------------------
+
+12. findIndex()
+
+> Returns the index of the first element that satisfies the condition.
+
+const numbers = [10,20,30,40];
+
+const result = numbers.findIndex(num=>num>20);
+
+console.log(result);
+
+---------------------------------------------------
+
+13. map()
+
+> Creates a new array by modifying each element.
+
+const numbers = [1,2,3];
+
+const result = numbers.map(num=>num*2);
+
+console.log(result);
+
+---------------------------------------------------
+
+14. filter()
+
+> Creates a new array with matching elements.
+
+const numbers = [10,20,30,40];
+
+const result = numbers.filter(num=>num>20);
+
+console.log(result);
+
+---------------------------------------------------
+
+15. reduce()
+
+> Reduces all elements into a single value.
+
+const numbers = [10,20,30];
+
+const result = numbers.reduce((total,num)=>total+num,0);
+
+console.log(result);
+
+---------------------------------------------------
+
+16. some()
+
+> Returns true if at least one element satisfies the condition.
+
+const numbers = [10,20,30];
+
+console.log(numbers.some(num=>num>20));
+
+---------------------------------------------------
+
+17. every()
+
+> Returns true if all elements satisfy the condition.
+
+const numbers = [10,20,30];
+
+console.log(numbers.every(num=>num>5));
+
+---------------------------------------------------
+
+18. sort()
+
+> Sorts the array.
+
+const numbers = [30,10,20];
+
+numbers.sort((a,b)=>a-b);
+
+console.log(numbers);
+
+---------------------------------------------------
+
+19. reverse()
+
+> Reverses the array.
+
+const numbers = [10,20,30];
+
+numbers.reverse();
+
+console.log(numbers);
+
+---------------------------------------------------
+
+20. flat()
+
+> Converts nested arrays into a single array.
+
+const arr = [1,2,[3,4],[5,6]];
+
+console.log(arr.flat());
+
+====================================================
+
+** Objects **
+
+> Object is a collection of key-value pairs.
+
+1. Creating Object
+
+const person = {
+
+   name:"Virat",
+
+   age:36,
+
+   country:"India"
+
+};
+
+---------------------------------------------------
+
+2. Accessing Properties
+
+> Access object values using dot(.) or bracket([]) notation.
+
+const person = {
+
+   name:"Virat",
+
+   age:36
+
+};
+
+console.log(person.name);
+
+console.log(person["age"]);
+
+---------------------------------------------------
+
+3. Updating Properties
+
+> Update object property.
+
+const person = {
+
+   name:"Virat",
+
+   age:36
+
+};
+
+person.age = 37;
+
+console.log(person);
+
+---------------------------------------------------
+
+4. Adding Properties
+
+> Add new property to object.
+
+const person = {
+
+   name:"Virat"
+
+};
+
+person.country = "India";
+
+console.log(person);
+
+---------------------------------------------------
+
+5. Deleting Properties
+
+> Remove property from object.
+
+const person = {
+
+   name:"Virat",
+
+   age:36
+
+};
+
+delete person.age;
+
+console.log(person);
+
+---------------------------------------------------
+
+6. Nested Objects
+
+> Object inside another object is called Nested Object.
+
+const employee = {
+
+   name:"Virat",
+
+   address:{
+
+      city:"Chennai",
+
+      state:"Tamil Nadu"
+
+   }
+
+};
+
+console.log(employee.address.city);
